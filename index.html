@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Global Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>BMI Calculater</title>
+</head>
+
+<body>
+    <div class="heading-info">
+        <h1 class="heading">𝓑𝓜𝓘 𝓒𝓪𝓵𝓬𝓾𝓵𝓪𝓽𝓮𝓻</h1>
+    </div>
+    <div id="mian" class="mian">
+        <div class="container">
+            <div>
+                <label for="age" class="age-label">Age:</label>
+                <input type="text" id="age" name="age" class="age-input" min="2" max="120"
+                    placeholder="Enter your age..." required>
+                <span>(age: 2-120)</span>
+
+            </div>
+            <div>
+                <label class="gender-option">Enter Gender.. <br>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label class="gender-option">
+                    <input type="radio" name="gender" value="other"> Other
+                </label>
+            </div>
+            <div>
+                <label for="height" class="height-label">Height:</label>
+                <input type="text" id="height" name="height" class="height-input" placeholder="...cm" required>
+            </div>
+            <div>
+                <label for="weight" class="weight-label">Weight:</label>
+                <input type="text" id="weight" name="weight" class="weight-input" placeholder="...kg" required>
+            </div>
+            <div class="calculate">
+                <button class="cal-btn">Calculate</button>
+            </div>
+            <div class="clear">
+                <button class="clr-btn">Clear</button>
+            </div>
+            <div class="chart">
+                <button onclick="handleSubmit" class="chart-btn cal-btn">Chart</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="table-chart">
+        <table border="0" width="100%" height="100%">
+            <tr>
+                <th colspan="2">WHO CLASSIFICATION OF WEIGHT STATUS</th>
+            </tr>
+            <tr>
+                <th>WEIGHT STATUS</th>
+                <th>BODY MASS INDEX (BMI), kg/cm²</th>
+            </tr>
+            <tr>
+                <td>Underweight</td>
+                <td>&lt;18.5</td>
+            </tr>
+            <tr>
+                <td>Normal range</td>
+                <td>18.5-24.9</td>
+            </tr>
+            <tr>
+                <td>Overweight</td>
+                <td>25.0-29.9</td>
+            </tr>
+            <tr>
+                <td>Obese</td>
+                <td>≥ 30</td>
+            </tr>
+            <tr>
+                <td>Obese class I</td>
+                <td>30.0-34.9</td>
+            </tr>
+            <tr>
+                <td>Obese class II</td>
+                <td>35.0-39.9</td>
+            </tr>
+            <tr>
+                <td>Obese class III</td>
+                <td>≥ 40</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Script  -->
+    <script src="project_04.js"></script>
+</body>
+
+</html>
